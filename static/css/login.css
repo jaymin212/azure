@@ -1,0 +1,106 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #222222;
+}
+
+.logo{
+  padding-bottom: 50px;
+  height: 200px;
+}
+.loginformContainer{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    background: #141414;
+    width: auto;
+    padding: 4% 5% 3% 5%;
+  
+  }
+  .loginformContainer form .data1{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 0px;
+    }
+
+  form .data1 input{
+    height: 100%; 
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+  }
+  
+  form .data1 input:focus{
+    border-color: #3498db;
+    border-bottom-width: 2px;
+  }
+
+  .loginformContainer form .data2{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 0px;
+    }
+
+  form .data2 input{
+    height: 100%; 
+    width: 100%;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+  }
+  
+  form .data2 input:focus{
+    border-color: #3498db;
+    border-bottom-width: 2px;
+  }
+  
+  form .forgot-pass{
+
+    margin-top: 20px;
+  }
+  
+  form .forgot-pass a{
+    color: #999898;
+    text-decoration: underline;
+  }
+  
+  form .loginbutton {
+    background-color: #71be58;
+    border: none;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  form .loginbutton:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .msg{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: red;
+    height: max-content;
+  }
+
+  ::placeholder {
+    font-weight: 600;
+  }

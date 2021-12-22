@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+	    <link rel= "stylesheet" href= "static/css/base.css">
+	</head>
+	<body>
+    <div>
+      <div class="data">
+        <p>Company Metrics</p>
+        <div class="datarow1">
+          <div class="row1value1"><button class="databutton"><label class="text1">$406,411.29</label> <br><br> <label class="text2">Totel Revenue</label></button></div>
+          <div class="row1value2"><button class="databutton"><label class="text1">$620</label> <br><br> <label class="text2">Total Jobs Avg</label></button></div>
+          <div class="row1value3"><button class="databutton"><label class="text1">655</label> <br><br> <label class="text2">Tickets Created</label></button></div>
+          <div class="row1value4"><button class="databutton"><label class="text1">735</label> <br><br> <label class="text2">Tickets Scheduled</label></button></div>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="datarow2">
+          <div class="row1value1"><button class="databutton"><label class="text1">$110,448.8</label> <br><br> <label class="text2">Outstanding Amount</label></button></div>
+          <div class="row1value2"><button class="databutton"><label class="text1">105</label> <br><br> <label class="text2">Memberships Sold</label></button></div>
+          <div class="row1value3"><button class="databutton"><label class="text1">436</label> <br><br> <label class="text2">Jobs Completed</label></button></div>
+          <div class="row1value4"><button class="databutton"><label class="text1">65</label> <br><br> <label class="text2">Total Canceled</label></button></div>
+        </div>
+      </div>
+      <br><br>
+      <div class="bar">
+        <div class="bar1label">
+          <p style="padding-top: 5%;">Revenue By Job Location</p>
+          <div class="bar1">
+		        <canvas id="myChart1" ></canvas>
+          </div>
+        </div>
+        <div class="bar2label">
+          <p style="padding-top: 5%;">Revenue By Job Type</p>
+          <div class="bar2">
+           <canvas id="myChart2" ></canvas>
+          </div>
+        </div>
+      </div>
+    </div>		
+    
+	</body>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>	
+		<script>
+var xValues = ["Everett", "Seattle", "Lynnwood", "Bothell", "Mukilteo","Edmonds"];
+var yValues = [80000, 72000, 48000, 47000, 41000,34000];
+var barColors = "rgba(65,191,154,255)";
+
+new Chart("myChart1", {
+  type: "horizontalBar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    indexAxis:"y",
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    }
+  }
+});
+
+new Chart("myChart2", {
+  type: "horizontalBar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    indexAxis:"y",
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "World Wine Production 2018"
+    }
+  }
+});
+	</script>
+</html>
