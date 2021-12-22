@@ -3,7 +3,7 @@ import os
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from itsdangerous import URLSafeTimedSerializer, SignatureExpired
 print(os.urandom(24))
-idpass={'1032180782@mitwpu.edu.in':'Test@12345'}
+idpass={'jayminptl2000@gmail.com':'Test@12345'}
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)
